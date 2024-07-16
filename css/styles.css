@@ -1,0 +1,84 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    border-collapse: collapse;
+}
+
+body {
+    background-image: url(../images/grid-16\ \(1\).png);
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+}
+
+#wrapper {
+    width:940px;
+    padding:30px 0;
+    background:rgba(255, 100, 0, .8);
+    margin:20px auto;
+    overflow:hidden;
+}
+
+.row {
+    margin-bottom:20px;
+    clear:both;
+}
+
+.col {
+    height:100px;
+    background:beige;
+}
+
+.col1 {
+    width:40px;
+    height:100px;
+    background:beige;
+}
+
+.col2 {
+    width:100px;
+    height:100px;
+    background:beige;
+}
+
+/* every column is 60px bigger*/
+
+.col3 {
+    width:160px;
+    height:100px;
+    background:beige;
+}
+
+.col4 {
+    width:220px;
+    float:left;
+    margin-right:20px;
+}
+
+.col4:last-of-type {
+    margin-right: 0;
+}
+
+.col5 {
+    width:280px;
+}
+
+.col6 {
+    width:340px;
+}
+
+.col7 {
+    width:400px;
+}
+
+.col8 {
+    width:460px;
+}
+
+.col9 {
+    width:520px;
+}
+
+.col10 {
+    width:520px;
+}
