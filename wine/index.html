@@ -13,7 +13,7 @@
     <header>    
 <a href="index.html">
 <img id="logo" src="images/wine-logo.svg" alt="logo">
-</a>
+</a>    
 
 <ul class="social">
     <li><a href=""><img src="images/facebook.svg" alt="facebook"></a></li>
@@ -21,11 +21,12 @@
     <li><a href=""><img src="images/twitter.svg" alt="twitter"></a></li>
 
 </ul>
-    </header>
+</header>
 
 <div id="navbar">
 
-    <nav>
+
+<nav>
 <ul id="primary">
 <li> <a href="index.html">Home</a></li>
 <li> <a href="about.html">About</a></li>
@@ -40,12 +41,12 @@
 <li> <a href="events.html">Events</a></li>
 <li> <a href="contact.html">Contact</a></li>
 </ul>
-    </nav>
+</nav>
 
 </div>
-    <!-- end navbar -->
+<!-- end navbar -->
 
-    <div id="hero">
+<div id="hero">
         <picture>
             <source media="(min-width:1299px)" srcset="images/banner-big.jpg">
             <source media="(min-width:769px)" srcset="images/banner-med.jpg">
@@ -54,8 +55,8 @@
 
         </picture>
 
-    </div>
-    <!-- end hero -->
+</div>
+<!-- end hero -->
 
 <div id="wrapper">
 <h1>Walla Walla Winery</h1>
@@ -93,13 +94,11 @@
             <li> <a id="css-checker" href="#"> CSS VALID</a></li>
     </ul>
 </footer>
-<script>
+<script>document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
 
-document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
 
- document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-
-     window.onscroll = function() {myFunction()};
+    window.onscroll = function() {myFunction()};
 
  
 
@@ -123,5 +122,6 @@ navbar.classList.remove("sticky");
 
 }
 </script>
+
 </body>
 </html>

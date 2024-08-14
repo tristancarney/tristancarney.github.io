@@ -24,7 +24,7 @@ body {
 
 header {
     /* width:940px */
-    max-width:1100px;
+    max-width:1200px;
     margin:0 auto;
     padding:20px 0 10px;
 }
@@ -32,6 +32,20 @@ header {
 #logo {
     width:240px;
 }
+
+
+header .social {
+    float:right;
+    margin-top:10px;
+}
+
+header .social li {
+    float:left;
+    margin-left:15px;
+    list-style-type:none;
+}
+
+
 
 .social {
     float:right;
@@ -47,7 +61,8 @@ header {
 #navbar {
     height: 50px;
     line-height:50px;
-    background:brown; 
+    background:#594302; 
+    z-index: 5;
 }
 
 nav {
@@ -65,6 +80,7 @@ nav a {
     width:16.66%;
     list-style-type:none;
     text-align:center;
+    position:relative;
 }
 
 
@@ -74,7 +90,7 @@ nav a {
 }
 
 #primary li a:hover {
-    background:pink;
+    background:#8C8303;
 }
 
 .dropdown {
@@ -84,9 +100,17 @@ nav a {
 #primary li:hover .dropdown {
     display:block;
     position:absolute;
-    background:green;
+    top:50px;
+    background:#594302; 
     list-style-type:none;
-    width:200px;
+    width:100%;
+    white-space:nowrap;
+   
+}
+
+#primary li:hover .dropdown a {
+    
+    padding:0 4px;
 }
 
 
@@ -96,7 +120,7 @@ nav a {
 
 #wrapper {
     /* width:940px; */
-    max-width:1100px;
+    max-width:1200px;
     margin:20px auto;
 
 }
@@ -111,12 +135,35 @@ overflow:hidden;
 width:31.91%;
 float:left;
 margin-right:2.12%;
+/* margin right 20px */
 text-align:center;
-padding:1.2%;
+padding:0 1.2%;
 }
 
 .thirds:last-of-type {
     margin-right: 0px;
+}
+
+.col8 {
+    width:48.93%;
+    float:left;
+
+}
+
+.col8:last-of-type {
+    float:right;
+}
+
+.col4  {
+    width:47.82%;
+    float:left;
+    margin-right:20px;
+    text-align:center;
+}
+
+.col4:last-of-type {
+    margin-right:0;
+
 }
 
 .read {
@@ -124,6 +171,10 @@ padding:1.2%;
     text-align:center;
     margin-top:8px;
     font-style:italic;
+}
+
+.read a {
+    color:#55A4CF;
 }
 
 footer {
@@ -145,36 +196,188 @@ footer li {
     margin:0 15px;
 }
 
+footer a {
+    color:#55A4CF;
+}
+
 .sticky {
     position:fixed;
+    width:100%;
     top:0;
     left:0;
-    width:100%;
+}
+
+img {
+    max-width:100%;
 }
 
 .home h1 {
     text-align:center;
-    font-size:3.2em;
+    font-size:3.4em;
     line-height:1.2;
-    margin-bottom:10px;
+    margin-bottom:0 6% 24px 6%;
+    color:#8C8303;
 }
 
 .home blockquote {
     text-align:center;
-    font-size:1.2em;
+    font-size:1.6em;
     margin-bottom:10px;
     font-style:italic;
+    padding:0 20px;
 }
 
 h1, h2, h3, blockquote {
     font-family:'Times New Roman', Times, serif;
 }
 
+h2, h3 {
+    color:#1C85BE;
+}
+
+.thirds h2 {
+    font-size:1.8em;
+
+}
+
+.col4 h2 {
+    margin-bottom:2px;
+}
+
+h2, h3 {
+    color:#1C85bE;
+    margin-bottom: 7px;
+
+}
 p {
     line-height:1.4;
 }
 
-.third p {
+.third p, .col4 {
     font-size:.8em;
     line-height: 1.2em;;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:1400px) {
+
+    body {
+        background:lightgoldenrodyellow;
+        font-size: 115%;
+
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    body {
+        font-size:110%;
+    }
+}
+
+@media screen and (max-width:1240px) {
+
+    body {
+        background:yellow;
+        font-size:105%;
+
+    }
+
+    header {
+        margin: 0 20px;
+    }
+
+    #wrapper {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    body {
+        background:lightblue;
+        font-size:91%;
+    }
+
+    .thirds {
+        padding:0 .5%;
+        }
+
+    .col8 {
+        width:auto;
+        float:none;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    body {
+        background:lightgrey;
+    }
+
+    .thirds {
+        /* width:300px; */
+        width:auto;
+        float:none;
+        margin-right:0;
+        /* margin right 20px */
+        text-align:center;
+        padding:1.2%;
+    }
+
+    #logo {
+        width:240px;
+        display:block;
+        margin:0 auto;
+    }
+
+   header .social {
+    display:none;
+    }
+
+
+   footer .social {
+        display:flex;
+        margin-top:15px;
+    }
+ 
+    footer {
+        height:auto;
+        line-height:inherit;
+        clear:both;
+    
+    }
+    
+    footer ul {
+        display:flex;
+        justify-content:center;
+        list-style-type:none;
+    
+    }
+    
+    footer li {
+        margin:0 15px;
+    }
+
+    .social {
+        display:flex;
+        margin-top:15px;
+
+    }
+
+
+}
+
+    
+
+@media screen and (max-width:700px) {
+
+        body {
+            background:lightgreen;
+        }
+
+        .col4 {
+            width:auto;
+            float:none;
+        }
+    }
