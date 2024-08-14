@@ -125,6 +125,19 @@ nav a {
 
 }
 
+main {
+    width: 60%;
+    padding:2%;
+    float:left;
+
+}
+
+aside {
+    width: 36.17%;
+    float:right;
+    margin-top:60px;
+}
+
 .row {
 margin-bottom:25px;
 overflow:hidden;
@@ -209,6 +222,12 @@ footer a {
 
 img {
     max-width:100%;
+    display:block;
+}
+
+.left {
+    float:left;
+    margin-right:30px;
 }
 
 .home h1 {
@@ -219,6 +238,16 @@ img {
     color:#8C8303;
 }
 
+h1 {
+    font-size:2.8em;
+    color:#8C8303;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
 .home blockquote {
     text-align:center;
     font-size:1.6em;
@@ -227,12 +256,36 @@ img {
     padding:0 20px;
 }
 
+blockquote {
+     font-size:1.6em;
+     font-style:italic;
+     border-left:10px solid tan;
+     padding-left:20px;
+     margin-bottom:20px;
+}
+
 h1, h2, h3, blockquote {
     font-family:'Times New Roman', Times, serif;
 }
 
 h2, h3 {
     color:#1C85BE;
+}
+
+h3 {
+    font-size:1.6em;
+    font-weight:200;
+}
+
+figcaption {
+    background:tan;
+    padding:8px;
+    font-size:.875em;
+}
+
+aside p {
+    font-size:.875em;
+    line-height:1.5;
 }
 
 .thirds h2 {

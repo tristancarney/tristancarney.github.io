@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toulaine Page</title>
+
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body class="wines toulaine">
+
+    <header>    
+<a href="index.html">
+<img id="logo" src="images/wine-logo.svg" alt="logo">
+</a>    
+
+<ul class="social">
+    <li><a href=""><img src="images/facebook.svg" alt="facebook"></a></li>
+    <li><a href=""><img src="images/linkedin.svg" alt="linkedin"></a></li>
+    <li><a href=""><img src="images/twitter.svg" alt="twitter"></a></li>
+
+</ul>
+</header>
+
+<div id="navbar">
+
+
+<nav>
+<ul id="primary">
+<li> <a href="index.html">Home</a></li>
+<li> <a href="about.html">About</a></li>
+<li> <a href="#">Wines</a>
+<ul class="dropdown">
+    <li> <a href="toulaine.html">Toulaine</a></li>
+    <li> <a href="mccrea.html">McCrea</a></li>
+    <li> <a href="something.html">SomeThing</a></li>
+</ul>
+</li>
+<li> <a href="tours.html">Tours</a></li>
+<li> <a href="events.html">Events</a></li>
+<li> <a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+<!-- end navbar -->
+
+
+<div id="wrapper">
+
+<main>
+<h1>Tolainni's San Giovanni Vineyard</h1>
+<p>
+    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed turpis nisl, finibus eu lacinia nec, euismod vitae dui. Sed ut purus vel nulla lacinia scelerisque. Proin a pretium dolor. Proin imperdiet diam non sapien sodales pretium. Aenean erat tortor, mattis eget diam et, ultricies consequat odio. 
+</p>
+<h2>This is my H2!</h2>
+<img class="left" src="images/legit.jpg" alt="legit">
+<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed turpis nisl, finibus eu lacinia nec, euismod vitae dui. Sed ut purus vel nulla lacinia scelerisque. Proin a pretium dolor. Proin imperdiet diam non sapien sodales pretium. Aenean erat tortor, mattis eget diam et, ultricies consequat odio. </p>
+
+<p>Phasellus arcu nunc, sodales a velit non, fringilla tempus est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc commodo efficitur lacus at vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse et dapibus mi, eu porta ipsum. Aenean feugiat nec libero at laoreet. Aenean leo orci, commodo eget sem vel, rhoncus convallis dui.</p>
+
+<h2>Another H2</h2>
+<p>Phasellus arcu nunc, sodales a velit non, fringilla tempus est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc commodo efficitur lacus at vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse et dapibus mi, eu porta ipsum. Aenean feugiat nec libero at laoreet. Aenean leo orci, commodo eget sem vel, rhoncus convallis dui.</p>
+
+<blockquote>Nunc commodo efficitur lacus at vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </blockquote>
+
+<p>Phasellus arcu nunc, sodales a velit non, fringilla tempus est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc commodo efficitur lacus at vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse et dapibus mi, eu porta ipsum. Aenean feugiat nec libero at laoreet. Aenean leo orci, commodo eget sem vel, rhoncus convallis dui.</p>
+
+</main> 
+
+<aside>
+<h3>This is our headline threee</h3>
+<p>Phasellus arcu nunc, sodales a velit non, fringilla tempus est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc commodo efficitur lacus at vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+
+<figure>
+<img src="images/italy.jpg" alt="italy">
+<figcaption>Vinyard in Italy</figcaption>
+</figure>
+<p>Phasellus arcu nunc, sodales a velit non, fringilla tempus est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc commodo efficitur lacus at vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+</aside>
+
+</div>
+<!-- end wrapper -->
+
+<footer>
+    <ul>
+            <li>Copyright 2024, &copy;</li>
+            <li>All Rights Reserved</li>
+            <li><a href="#">Web Design by Tristan J Carney</a></li>
+            <li> <a id="html-checker" href="#"> HTML VALID</a></li>
+            <li> <a id="css-checker" href="#"> CSS VALID</a></li>
+    </ul>
+</footer>
+<script>document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+    window.onscroll = function() {myFunction()};
+
+ 
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+
+
+function myFunction() {
+
+if (window.pageYOffset >= sticky) {
+
+navbar.classList.add("sticky")
+
+} else {
+
+navbar.classList.remove("sticky");
+
+}
+
+}
+</script>
+
+</body>
+</html>
