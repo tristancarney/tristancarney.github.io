@@ -2,30 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wine 2 Site</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Travel Home Page</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-
 </head>
-
-<body>
+<body class="home">
+    <nav>
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a id="logo" href="#index.html">Logo</a>
+       
         <div class="dropdown">
-          <button class="dropbtn">Dropdown
+          <button class="dropbtn">Destinations
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="europe.html">Europe</a>
+            <a href="asia.htmnl">Asia</a>
+            <a href="hawaii.html">Hawaii</a>
           </div>
         </div>
-        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Cruises
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="small.html">Small</a>
+              <a href="medium.html">Medium</a>
+              <a href="large.html">Large</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Insurance
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="cheap.html">Cheap</a>
+              <a href="middle.html">Middle</a>
+              <a href="expensive.html">Expensive</a>
+            </div>
+          </div>
+        
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a class="accent"  href="bookit.html">Book It</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div> 
+
+      <!-- end topnav -->
+
+    </nav>
+
+      <div id="hero">
+        <picture>
+
+            <source media="(min-width:1299px)" srcset="images/buffalo-big.jpg">
+           
+            <source media="(min-width:769px)" srcset="images/buffalo-med.jpg">
+           
+            <source media="(max-width:768px)" srcset="images/buffalo-small.jpg">
+           
+            <img src="images/banner-tint.jpg" alt="Buffalo">
+           
+            </picture>
+      </div>
+
+      <!-- end hero -->
+
+      <div id="wrapper">
+
+        <h1>Welcome to our Home Page</h1>
+        <h2>Marketing Tagline</h2>
+        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo lorem, aliquet sed elit sed, faucibus iaculis lacus. Fusce dui ipsum, rhoncus non venenatis eget, ultrices eget tortor."</blockquote>
+        
+
+        <h2>About Great Adventures</h2>
+        <div class="row">
+        <div class="col8">
+            <p>
+            Maecenas venenatis eget nisi at aliquam. Proin elementum imperdiet lacus, vel sodales nibh fringilla sit amet. Aliquam erat volutpat. Cras euismod, lacus quis laoreet sollicitudin, odio lorem posuere diam, vel interdum magna ligula sed libero. Phasellus laoreet a mi quis feugiat. Morbi finibus lectus orci, nec hendrerit purus tempor et. Mauris eget ipsum consequat, interdum leo vitae, aliquam dolor. Phasellus ac elit a nisl bibendum commodo. Cras cursus sit amet lorem nec interdum. Nam placerat, justo pulvinar sodales fringilla, nisl tortor mattis massa, ac tincidunt ligula sem eu risus. Donec semper non mauris ac convallis.
+
+            </p>
+            <p>
+                Sed eu nibh pretium, mattis orci eu, bibendum magna. Donec semper augue laoreet felis venenatis pulvinar. Curabitur tempor dui quam, ut commodo enim posuere ut. Phasellus iaculis posuere urna, eget imperdiet nibh porta vel. Integer tempor, erat ac mattis egestas, mauris nulla laoreet sem, sed scelerisque mi velit sed nisl. Mauris a ultricies massa. Cras tortor purus, consectetur in quam id, posuere euismod justo. Vestibulum dignissim risus at dolor porta suscipit. Vestibulum id sollicitudin urna, cursus viverra sem. Nulla imperdiet sed ipsum ac elementum. Fusce augue nisi, elementum vitae diam et, tincidunt rutrum est. Quisque luctus imperdiet enim.
+
+            </p>
+
+            <h2>Another Headline</h2>
+            <p>
+                Maecenas venenatis eget nisi at aliquam. Proin elementum imperdiet lacus, vel sodales nibh fringilla sit amet. Aliquam erat volutpat. 
+            </p>
+        </div>
+        <!-- end col8 -->
+
+        <div class="col8">
+            <img src="images/building-small.jpg" alt="building">
+        </div>
+        <!-- end col8  -->
+
+        </div>
+        <!-- end row -->
+
+        <h2>Our Travel Experts</h2>
+
+        <div class="row">
+            <div class="col8-2">
+            <div class="col4">
+            <img src="images/people/claire.jpg" alt="Claire">
+            <h2>Claire Danes</h2>
+            <p>Sed turpis nisl, finibus eu lacinia nec, euismod vitae dui. Sed ut purus vel nulla lacinia scelerisque. Proin a pretium dolor. Proin imperdiet diam non sapien sodales pretium.<span class="read"><a href="">Read More</a></span> </p>
+                
+            </div>
+            <!-- close col 4 -->
+            
+            <div class="col4">
+            <img src="images/people/george.jpg" alt="george">
+            <h2>George Clooney</h2>
+            <p>Sed turpis nisl, finibus eu lacinia nec, euismod vitae dui. Sed ut purus vel nulla lacinia scelerisque. Proin a pretium dolor. Proin imperdiet diam non sapien sodales pretium.  <span class="read"><a href="">Read More</a></span> </p>
+            </div>
+            <!-- close second col 4 -->
+            </div>
+            <!-- end col8 -->
+            
+            <div class="col8-2">
+            <div class="col4">
+            <img src="images/people/maya.jpg" alt="maya">
+            <h2>Maya Angelou</h2>
+            <p>Sed turpis nisl, finibus eu lacinia nec, euismod vitae dui. Sed ut purus vel nulla lacinia scelerisque. Proin a pretium dolor. Proin imperdiet diam non sapien sodales pretium. <span class="read"><a href="">Read More</a></span> </p>
+            
+            
+            </div>
+            <!-- close third col 4 -->
+            
+            
+            <div class="col4">
+            <img src="images/people/hillary.jpg" alt="hillary">
+            <h2>Hillary Clinton</h2>
+            <p>Sed turpis nisl, finibus eu lacinia nec, euismod vitae dui. Sed ut purus vel nulla lacinia scelerisque. Proin a pretium dolor. Proin imperdiet diam non sapien sodales pretium. <span class="read"><a href="">Read More</a></span> </p>
+            
+            </div>
+            <!-- close fourth col 4 -->
+
+      </div>
+      <!-- end wrapper -->
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+      
 </body>
+</html>
