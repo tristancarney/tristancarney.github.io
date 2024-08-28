@@ -13,9 +13,9 @@ img[alt=""] {
 border: 3px  dashed Red,
 }
 
-img {
+/* img {
     width:100%;
-}
+} */
 
 body {
     font-size:100%;
@@ -31,6 +31,7 @@ header {
 
 #logo {
     width:240px;
+    float:left;
 }
 
 
@@ -63,6 +64,7 @@ header .social li {
     line-height:50px;
     background:#594302; 
     z-index: 5;
+    clear:both;
 }
 
 nav {
@@ -122,6 +124,7 @@ nav a {
     /* width:940px; */
     max-width:1200px;
     margin:20px auto;
+    clear:both;
 
 }
 
@@ -138,9 +141,14 @@ aside {
     margin-top:60px;
 }
 
+aside p {
+    float:right;
+}
+
 .row {
 margin-bottom:25px;
 overflow:hidden;
+clear:both;
 }
 
 .thirds {
@@ -211,6 +219,10 @@ footer li {
 
 footer a {
     color:#55A4CF;
+}
+
+footer .social {
+    display:none;
 }
 
 .sticky {
@@ -382,34 +394,51 @@ p {
         width:240px;
         display:block;
         margin:0 auto;
+        float:left;
     }
 
    header .social {
     display:none;
     }
 
+    aside, main {
+        float:none;
+        width:auto;
+    }
+
 
    footer .social {
-        display:flex;
+        display:block;
         margin-top:15px;
+        float:none;
     }
  
     footer {
         height:auto;
         line-height:inherit;
-        clear:both;
+        padding:7px 0;
     
     }
     
     footer ul {
-        display:flex;
-        justify-content:center;
-        list-style-type:none;
-    
+        flex-direction:column;
     }
     
     footer li {
         margin:0 15px;
+    }
+
+    main {
+        width:54%; 
+    }
+
+    aside {
+        width:42%;
+    }
+
+    .left {
+        width:200px;
+        margin-right:20px;
     }
 
     .social {
@@ -417,6 +446,7 @@ p {
         margin-top:15px;
 
     }
+
 
 
 }
@@ -433,4 +463,23 @@ p {
             width:auto;
             float:none;
         }
+
+        main, aside {
+
+            float:none;
+            width:auto;
+        }
+
+        figure img {
+            margin:0 auto;
+        
+        }
+
+        aside p{
+            font-size:1em;
+        }
+
+       
+
+        
     }

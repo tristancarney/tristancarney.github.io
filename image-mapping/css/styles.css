@@ -37,13 +37,6 @@ position:relative;
 margin-bottom:20px;
 }
 
-
-aside{
-/* width:340px; */
-width:35%;
-float:right;
-}
-
 .map {
     background-image: url(../images/map-new.jpg);
     padding-bottom:60.08%;
@@ -51,6 +44,13 @@ float:right;
     background-size: cover;
 
 }
+
+aside{
+/* width:340px; */
+width:35%;
+float:right;
+}
+
 
 footer {
     height:50px;
@@ -110,6 +110,12 @@ h1 {
         background:lightblue;
     }
 
+    main, aside {
+        float:none;
+        width:auto;
+    }
+
+
     footer ul {
         flex-direction:column;
     }
@@ -124,6 +130,7 @@ h1 {
         height:auto;
         line-height:inherit;
         padding:7px 0;
+        text-align:center;
     }
 }
 

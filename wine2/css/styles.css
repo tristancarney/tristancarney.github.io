@@ -13,6 +13,10 @@ img[alt=""] {
 border: 3px  dashed Red,
 }
 
+img {
+    max-width:100%;
+}
+
 body {
     font-size:100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -38,6 +42,14 @@ header {
     float:left;
     margin-left:15px;
     list-style-type:none;
+}
+
+footer .social {
+    display:none;
+}
+
+footer ul {
+    display:row;
 }
 
 .nav-button { display: none; } /* hide the navigation button by default */
@@ -144,7 +156,6 @@ footer {
     line-height:50px;
     border-top:1px solid #aaa;
     clear:both;
-
 }
 
 footer ul {
@@ -416,25 +427,20 @@ p {
     display:none;
     }
 
-
-   footer .social {
-        display:flex;
+    footer .social {
+        display:block;
         margin-top:15px;
+        float:none;
     }
  
     footer {
         height:auto;
         line-height:inherit;
-        clear:both;
+        padding:7px 0;
     
     }
     
-    footer ul {
-        display:flex;
-        justify-content:center;
-        list-style-type:none;
     
-    }
     
     footer li {
         margin:0 15px;
@@ -456,5 +462,6 @@ p {
         .col4 {
             width:auto;
             float:none;
+        
         }
     }
